@@ -92,6 +92,12 @@ b.  Usa las funciones **dim, head, tail, str** para una primera visión de los c
 c.  Muestra los nombres de las filas y las columnas (**rownames**, **colnames**)
 
 ```{r}
+#a.
+data("mammals", package = "MASS")
+str(mammals)  # es un data frame de 62 objetos y dos variables
+
+data("Animals2", package = "robustbase")
+str(Animals2) # es un data frame de 65 objetos y cinco variables
 
 
 
