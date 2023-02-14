@@ -99,10 +99,18 @@ str(mammals)  # es un data frame de 62 objetos y dos variables
 data("Animals2", package = "robustbase")
 str(Animals2) # es un data frame de 65 objetos y cinco variables
 
+#b.
+# Dataset mammals
+dim(mammals)
+head(mammals)
+tail(mammals)
+str(mammals)
 
-
-
-
+# Dataset Animals2
+dim(Animals2)
+head(Animals2)
+tail(Animals2)
+str(Animals2)
 
 
 
