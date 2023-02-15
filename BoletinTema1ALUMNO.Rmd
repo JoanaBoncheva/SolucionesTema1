@@ -279,9 +279,13 @@ colSums((sapply(Chile, is.na))) # Observamos que en algunas variables de Chile s
 
 ```{r}
 
+library(car)
 
+car::qqPlot(log(cabbages$HeadWt))
 
+car::qqPlot(log(cabbages$VitC))
 
+# En ambos casos los datos lo verifican dado que los puntos se acercan mucho a la recta de la aproximacion
 
 ```
 
