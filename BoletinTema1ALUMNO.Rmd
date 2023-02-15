@@ -204,8 +204,12 @@ libReturn <- library()
 libReturn
 # Lista de 3 elementos: header, results (vector de muchos elementos) y footer
 
+#b)
+head(libReturn$results, n=5)
 
-
+#c)
+dim(libReturn[[2]])
+# 196 librerias instaladas
 
 
 
