@@ -137,10 +137,9 @@ colnames(mammals)
 d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los aminales que aparezcan en ambos conjuntos
 
 ```{r}
-
-
-
-
+# Animales en comun
+library(dplyr)
+commonAnimals <- intersect(mammals, Animals2)
 
 
 ```
