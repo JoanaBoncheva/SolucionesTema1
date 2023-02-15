@@ -213,7 +213,7 @@ dim(libReturn[[2]])
 
 
 
- ```
+```
 
 4.  En las transparencias del tema 1 se citan los primeros pasos a seguir cuando se analiza un nuevo conjunto de datos.
 
@@ -224,27 +224,50 @@ dim(libReturn[[2]])
 
 ```{r}
 
+#a)
+library(MASS)
+dim(cabbages)
+
+str(cabbages)
+
+head(cabbages)
+
+tail(cabbages)
+
+glimpse(cabbages)
+
+summary(cabbages)
 
 
+#b)
+# Valores perdidos:
+any(is.na(cabbages)) # no hay valores perdidos en cabbages
 
 
+#c)
+library(car)
+dim(Chile)
+
+str(Chile)
+
+head(Chile)
+
+tail(Chile)
+
+glimpse(Chile)
+
+summary(Chile)
 
 
+#d)
+# Utilizando la funcion summary para los dos conjuntos:
+summary(cabbages)
+summary(Chile)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Podemos utilizar la funcion colsums
+colSums(sapply(cabbages, is.na))
+colSums((sapply(Chile, is.na))) # Observamos que en algunas variables de Chile si que hay valores perdidos
+# Por ejemplo, en age 1 valos NA, en education 11 valores NA, en income 98 valores NA entre otros.
 
 
 
