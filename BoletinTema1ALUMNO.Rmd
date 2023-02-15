@@ -139,7 +139,7 @@ d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los 
 ```{r}
 # Animales en comun
 library(dplyr)
-commonAnimals <- intersect(mammals, Animals2)
+commonAnimals <- intersect(rownames(mammals), rownames(Animals2))
 
 
 ```
@@ -147,8 +147,11 @@ commonAnimals <- intersect(mammals, Animals2)
 e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son ?. ¿Qué tipo de animales son?
 
 ```{r}
-
-
+# Animales que estan en un conjunto pero no en el otro
+df <- setdiff(rownames(mammals), rownames(Animals2))
+df
+# df es un vectos de 4 elementos, por tanto se diferencian 4 animales.
+# Son "Arctic fox", "Arctic ground squirrel", "Patas monkey" y "Mole rat" 
 
 
 
