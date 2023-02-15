@@ -113,6 +113,15 @@ tail(Animals2)
 str(Animals2)
 
 
+#c.
+# Dataset Animals2
+rownames(Animals2)
+colnames(Animals2)
+
+# Dataset mammals
+rownames(mammals)
+colnames(mammals)
+
 
 
 
