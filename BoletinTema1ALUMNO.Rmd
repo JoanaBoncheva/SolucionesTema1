@@ -162,11 +162,10 @@ e.  Determina las diferencia entre los animales que no aparecen en ambos conjunt
 
 ```{r}
 
+df2 <- df <- setdiff(rownames(Animals2), rownames(mammals))
+df2
 
-
-
-
-
+# Podemos ver que algunos animales que estan en Animals2 pero no en mammals, en realidad si que estan presentes en este conjunto. Sin embargo estan esrcitos de forma diferente, por lo que Rstudio los interpreta como diferentes.
 
 
 
