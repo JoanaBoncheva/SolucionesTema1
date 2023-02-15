@@ -199,16 +199,17 @@ car::qqPlot(log(Animals2$brain))
 
     ```{r}
 
+#a)
+libReturn <- library()
+libReturn
+# Lista de 3 elementos: header, results (vector de muchos elementos) y footer
 
 
 
 
 
 
-
-
-
-    ```
+ ```
 
 4.  En las transparencias del tema 1 se citan los primeros pasos a seguir cuando se analiza un nuevo conjunto de datos.
 
